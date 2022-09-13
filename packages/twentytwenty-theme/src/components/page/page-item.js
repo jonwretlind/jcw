@@ -133,6 +133,7 @@ export const EntryContent = styled.div`
   }
   @media (max-width: 768px) {
     padding-left: 2rem;
+    font-size: 1.8rem;
   }
 
   > *:first-of-type {
@@ -224,7 +225,7 @@ export const EntryContent = styled.div`
     }
   @media (max-width: 768px) {
     p, .btn-container, ul, ol {
-          font-size: 145%;
+          font-size: 155%;
     }
     h3, h4 {
           font-size: 180%;
@@ -241,7 +242,7 @@ export const EntryContent = styled.div`
 
   .btn-container {
     display: flex;
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 20px;
 
     @media (max-width: 768px) {

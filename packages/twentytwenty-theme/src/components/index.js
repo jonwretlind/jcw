@@ -88,9 +88,28 @@ const Loader = styled.div`
   position: fixed;
   width: 100vw;
   height: 100vh;
-  content: " ";
   background-color: #222;
   z-index: 100;
   display: flex;
   justify-content: center;
+  &::after {
+    content: "LOADING";
+    color: #999;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    position: fixed;
+    z-index: 2;
+    margin-top: 40vh;
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-shadow: 0 0 20px rgba(255,255,255,1);
+  }
+
+      @keyframes glow {
+        0%    { opacity: 0; color: #999;  }
+        100%  { opacity: 1; color: #fa7e14; }
+      }
+
 `;

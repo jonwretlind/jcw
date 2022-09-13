@@ -95,7 +95,6 @@ const JcwStyle = ({state}) => {
             }
           }
         }
-
         #page.home {
           main {
             max-width: 93rem;

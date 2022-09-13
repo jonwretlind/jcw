@@ -107,18 +107,20 @@ const TitleGroup = styled.div`
 }
 @media (max-width: 768px) {
   .title {
-    font-size: 2.1rem;
-  }
-  .description {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 360px) {
-  .title {
     font-size: 2.5rem;
   }
   .description {
-    font-size: 1.3rem;
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 375px) {
+  .description {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 320px) {
+  .description {
+    font-size: 1.6rem;
   }
 }
 

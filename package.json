@@ -22,6 +22,7 @@
     "@frontity/tiny-router": "^1.4.1",
     "@frontity/twentytwenty-theme": "./packages/twentytwenty-theme",
     "@frontity/wp-source": "^1.11.2",
+    "animejs": "^3.2.1",
     "cycle2": "^1.0.4",
     "frontity": "^1.14.3",
     "glider-js": "^1.7.7",

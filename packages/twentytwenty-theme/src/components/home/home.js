@@ -1,6 +1,7 @@
 import { styled, connect } from "frontity";
 import { useEffect } from "react";
 import BackgroundMedia from "../common/background-media";
+import AnimatedBubbles from "../common/animated-bubbles";
 
 
 const HomePage = ({ state, id, actions, libraries }) => {
@@ -45,7 +46,10 @@ const HomePage = ({ state, id, actions, libraries }) => {
        * list of featured Pages, we render the media.
        */}
       {state.theme.featuredMedia.showOnPage && (
+        <>
+        <AnimatedBubbles />
         <BackgroundImage id={page.featured_media} isSinglePage={true} />
+        </>
       )}
 
       <HomePageInner size="medium">

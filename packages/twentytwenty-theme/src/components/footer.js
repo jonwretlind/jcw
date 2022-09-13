@@ -54,7 +54,7 @@ const SiteFooter = styled.footer`
   border-color: #dcd7ca;
   border-style: solid;
   border-width: 0;
-  padding: 2rem 0;
+  padding: 1rem 0;
   background-color: #222;
   color: #fff;
   position: fixed;
