@@ -80,6 +80,3 @@ Got questions or feedback about Frontity? We'd love to hear from you. Use our [c
 
 Frontity also welcomes contributions. There are many ways to support the project! If you don't know where to start, this guide might help → [How to contribute?](https://docs.frontity.org/contributing/how-to-contribute)
 =======
-# jcw-site-2022
-My website written using Frontity and React for a headless Wordpress site
->>>>>>> origin/master
