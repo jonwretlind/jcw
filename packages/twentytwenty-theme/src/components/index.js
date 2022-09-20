@@ -88,7 +88,7 @@ const Loader = styled.div`
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #222;
+  background-color: #1e2a34;
   z-index: 100;
   display: flex;
   justify-content: center;

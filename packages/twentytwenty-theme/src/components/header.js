@@ -149,7 +149,7 @@ const TitleWrapper = styled.div`
 `;
 
 const PageHeader = styled.header`
-  background: #222;
+  background: #1e2a34;
   position: relative;
   margin-bottom: 5rem;
   height: 22rem;

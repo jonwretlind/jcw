@@ -144,7 +144,7 @@ const Bubbles = styled.div`
   width: 100%;
   color: #C45400;
 
-  @medial (max-width: 768px) {
+  @media (max-width: 768px) {
     bottom: 40vh;
   }
 

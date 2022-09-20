@@ -116,6 +116,7 @@ export const PageInner = styled(SectionContainer)`
   transition: all 0.15s linear;
   margin-top: 2em;
   max-width: 93rem;
+  z-index: 2;
 
   @media (max-width: 768px) {
     margin-top: 0.5em;
@@ -127,6 +128,10 @@ export const EntryContent = styled.div`
   font-family: inherit;
   letter-spacing: normal;
   max-width: 66%;
+
+  @media (min-width: 1400px) {
+      max-width: 80%;
+  }
 
   @media (min-width: 768px) {
     font-size: 1.2rem;

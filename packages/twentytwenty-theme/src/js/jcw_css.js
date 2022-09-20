@@ -101,6 +101,28 @@ const JcwStyle = ({state}) => {
             margin: 0 auto;
           }
         }
+        body.services .img-container figure#image {
+          @media (max-width: 768px) {
+            right: -200px;
+          }
+          @media (max-width: 425px) {
+            right: -67px;
+            width: 47vw;
+          }
+          @media (max-width: 375px) {
+            width: 53vw;
+          }
+          img {
+              margin: 50px;
+              @media (max-width: 1200px) {
+                transform: translate(-30px, -110px) rotate(-30deg);
+              }
+              @media (max-width: 768px) {
+                transform: translate(-50px, -110px) rotate(-30deg);
+                margin: 78px;
+            }
+          }
+        }
         .loader div {
           width: 100px;
           height: auto;
@@ -139,8 +161,6 @@ const JcwStyle = ({state}) => {
             }
           }
         }
-
-
       `}
     />
   );

@@ -2,7 +2,7 @@ import { connect, styled } from "frontity";
 import { useEffect } from "react";
 import Img from "@frontity/components/image";
 import SectionContainer from "../styles/section-container";
-import anime from 'animejs/lib/anime.es.js';
+import $ from "jquery";
 
 const AnimatedCircles= ({ state, id, className, actions }) => {
     /**
@@ -13,7 +13,7 @@ const AnimatedCircles= ({ state, id, className, actions }) => {
       actions.source.fetch("/");
 
       // animation
-      $(window).load(function(){
+      $(window).ready(function(){
         for (var i = 0; i < 50; i++) {
           var names = ['x1','x2','y1','y2'],
               name = names[Math.floor(Math.random() * names.length)];
@@ -47,7 +47,7 @@ const Circles = styled.div`
   position: fixed;
   width: 100%;
   min-height: 100%;
-  background: #282828;
+  right: -300px;
 }
 .circles,
 .circle-container,
@@ -59,14 +59,14 @@ const Circles = styled.div`
   left: 0;
   margin: auto;
 
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 600px;
 }
 .circles {
   animation: z 10s linear infinite alternate;
 }
 .circle {
-  border: 1px solid #f7f7f7;
+  border: 1px solid #999;
   border-radius: 100%;
   opacity: 0;
 }

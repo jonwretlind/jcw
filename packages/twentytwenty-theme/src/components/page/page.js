@@ -1,6 +1,7 @@
 import { styled, connect } from "frontity";
 import { useEffect } from "react";
 import FeaturedMedia from "../common/featured-media";
+import Switch from "@frontity/components/switch";
 import {
   EntryContent,
   Page as _Page,
@@ -9,6 +10,9 @@ import {
   PageTitle,
   SectionContainer,
 } from "./page-item"
+import AnimatedCircles from "../common/animated-circles";
+import AnimatedConstellation from "../common/animated-constellation";
+import AnimatedSquares from "../common/animated-squares";
 
 const Page = ({ state, id, actions, libraries }) => {
   // Get information about the current URL.
@@ -20,6 +24,19 @@ const Page = ({ state, id, actions, libraries }) => {
   // const author = state.source.author[Page.author];
   // Get a human readable date.
   // const date = new Date(Page.date);
+/*
+    let component = "";
+    let bodyClass = document.querySelector('body');
+      switch ( bodyClass ) {
+        case "services" :
+          component = "<AnimatedConstellation />";
+          break;
+        default :
+          component = "<AnimatedCircles />";
+      }
+      return component;
+*/
+let pg = state.router.link.match(/[^\/]+/g);
 
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
@@ -46,7 +63,14 @@ const Page = ({ state, id, actions, libraries }) => {
          * list of featured Pages, we render the media.
          */}
         {state.theme.featuredMedia.showOnPage && (
-          <FeaturedMedia id={page.featured_media} isSinglePage={true} />
+          <>
+            <Switch>
+              <AnimatedConstellation when={pg == "services"} />
+              <AnimatedSquares when={pg == "about"} />
+              <AnimatedCircles when={pg == "contact"} />
+            </Switch>
+            <FeaturedMedia id={page.featured_media} isSinglePage={true} />
+          </>
         )}
     </PageArticle>
   ) : null;
@@ -129,4 +153,8 @@ const FeaturedImage = styled(FeaturedMedia)`
     right: 0;
     top: 0;
   }
+`;
+
+const Animation = styled.div`
+
 `;

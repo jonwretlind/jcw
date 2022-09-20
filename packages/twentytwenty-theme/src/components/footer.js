@@ -51,11 +51,8 @@ const SiteFooterInner = styled(SectionContainer)`
 
 const SiteFooter = styled.footer`
   margin-top: 5rem;
-  border-color: #dcd7ca;
-  border-style: solid;
-  border-width: 0;
   padding: 1rem 0;
-  background-color: #222;
+  background-color: #1e2a34;
   color: #fff;
   position: fixed;
   width: 100vw;

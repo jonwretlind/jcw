@@ -32,11 +32,11 @@ const HomePage = ({ state, id, actions, libraries }) => {
       <Header>
         <SectionContainer>
 
-          <HomePageTitle
+        {/*<HomePageTitle
             as="h1"
             className="heading-size-1"
             dangerouslySetInnerHTML={{ __html: page.title.rendered }}
-          />
+          /> */}
 
         </SectionContainer>
       </Header>
@@ -102,6 +102,11 @@ export const HomePageInner = styled(SectionContainer)`
   transition: all 0.15s linear;
   margin-top: 2em;
 
+
+    @media (min-width: 1400px) {
+      max-width: 80vw;
+    }
+
   @media (max-width: 768px) {
     margin-top: 0.5em;
   }
@@ -137,6 +142,14 @@ export const EntryContent = styled.div`
       animation-fill-mode: forwards;
       max-width: 75%;
   }
+
+
+  @media (min-width: 1400px) {
+    p {
+      max-width: 90%;
+    }
+  }
+
   @media (max-width: 1200px) {
     .btn-container {
       display: flex;

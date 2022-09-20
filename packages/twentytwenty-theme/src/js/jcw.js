@@ -155,6 +155,9 @@ const JCW = ({ state }) => {
       // PAGE adjustments and modifications
       $('div[class*="EntryContent"]').addClass('entry-content');
 
+      var loc = location.pathname.match(/[^\/]+/g);
+      $('body').addClass(loc);
+
     });//window.ready
 
 })
