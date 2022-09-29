@@ -74,6 +74,11 @@ export const NavToggle = styled(BaseToggle)`
     right: 3rem;
     margin-top: -4rem;
   }
+  
+  @media (max-width: 768px) {
+    width:  50px;
+  }
+
   @media screen and (orientation: landscape) {
     width: 55px;
   }
@@ -164,7 +169,7 @@ export const ToggleText = styled.span`
   word-break: break-all;
 
   @media (min-width: 768px) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   @media (min-width: 1200px) {

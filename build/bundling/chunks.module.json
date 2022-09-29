@@ -1,0 +1,497 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "19c10fe192d50aff0b7a",
+  "publicPath": "",
+  "outputPath": "/home/jcwretlind/website/jcw_website/jcw/build/static",
+  "assetsByChunkName": {
+    "archive": "archive.module.js",
+    "archive~portfolio~post": "archive~portfolio~post.module.js",
+    "archive~post": "archive~post.module.js",
+    "home": "home.module.js",
+    "jcw": [
+      "jcw.module.js",
+      "jcw.6e51a62df857ceff1a02.hot-update.js"
+    ],
+    "page": "page.module.js",
+    "portfolio": "portfolio.module.js",
+    "post": "post.module.js",
+    "vendors~home": "vendors~home.module.js"
+  },
+  "assets": [
+    {
+      "name": "6e51a62df857ceff1a02.hot-update.json",
+      "size": 45,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "archive.module.js",
+      "size": 72030,
+      "chunks": [
+        "archive"
+      ],
+      "chunkNames": [
+        "archive"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "archive~portfolio~post.module.js",
+      "size": 53038,
+      "chunks": [
+        "archive~portfolio~post"
+      ],
+      "chunkNames": [
+        "archive~portfolio~post"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "archive~post.module.js",
+      "size": 132222,
+      "chunks": [
+        "archive~post"
+      ],
+      "chunkNames": [
+        "archive~post"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "home.module.js",
+      "size": 132910,
+      "chunks": [
+        "home"
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "jcw.6e51a62df857ceff1a02.hot-update.js",
+      "size": 60350,
+      "chunks": [
+        "jcw"
+      ],
+      "chunkNames": [
+        "jcw"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "jcw.module.js",
+      "size": 10695206,
+      "chunks": [
+        "jcw"
+      ],
+      "chunkNames": [
+        "jcw"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "page.module.js",
+      "size": 216512,
+      "chunks": [
+        "page"
+      ],
+      "chunkNames": [
+        "page"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "portfolio.module.js",
+      "size": 225242,
+      "chunks": [
+        "portfolio"
+      ],
+      "chunkNames": [
+        "portfolio"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "post.module.js",
+      "size": 29787,
+      "chunks": [
+        "post"
+      ],
+      "chunkNames": [
+        "post"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "vendors~home.module.js",
+      "size": 177757,
+      "chunks": [
+        "vendors~home"
+      ],
+      "chunkNames": [
+        "vendors~home"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "jcw": {
+      "chunks": [
+        "jcw"
+      ],
+      "assets": [
+        "jcw.module.js",
+        "jcw.6e51a62df857ceff1a02.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "jcw": {
+      "chunks": [
+        "jcw"
+      ],
+      "assets": [
+        "jcw.module.js",
+        "jcw.6e51a62df857ceff1a02.hot-update.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "archive": {
+      "chunks": [
+        "archive~portfolio~post",
+        "archive~post",
+        "archive"
+      ],
+      "assets": [
+        "archive~portfolio~post.module.js",
+        "archive~post.module.js",
+        "archive.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "portfolio": {
+      "chunks": [
+        "archive~portfolio~post",
+        "portfolio"
+      ],
+      "assets": [
+        "archive~portfolio~post.module.js",
+        "portfolio.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "post": {
+      "chunks": [
+        "archive~portfolio~post",
+        "archive~post",
+        "post"
+      ],
+      "assets": [
+        "archive~portfolio~post.module.js",
+        "archive~post.module.js",
+        "post.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "page": {
+      "chunks": [
+        "page"
+      ],
+      "assets": [
+        "page.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "home": {
+      "chunks": [
+        "vendors~home",
+        "home"
+      ],
+      "assets": [
+        "vendors~home.module.js",
+        "home.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "archive",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "size": 51592,
+      "names": [
+        "archive"
+      ],
+      "files": [
+        "archive.module.js"
+      ],
+      "hash": "6272fe465badcb9a32d0",
+      "siblings": [
+        "archive~portfolio~post",
+        "archive~post"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "archive~portfolio~post",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: default) (name: archive~portfolio~post)",
+      "size": 28133,
+      "names": [
+        "archive~portfolio~post"
+      ],
+      "files": [
+        "archive~portfolio~post.module.js"
+      ],
+      "hash": "0763c4951bdb435462ba",
+      "siblings": [
+        "archive",
+        "archive~post",
+        "portfolio",
+        "post"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "archive~post",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: default) (name: archive~post)",
+      "size": 110202,
+      "names": [
+        "archive~post"
+      ],
+      "files": [
+        "archive~post.module.js"
+      ],
+      "hash": "e31ac5b76a58e17930fd",
+      "siblings": [
+        "archive",
+        "archive~portfolio~post",
+        "post"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "home",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "size": 97463,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.module.js"
+      ],
+      "hash": "073578b59870f2fcfe38",
+      "siblings": [
+        "vendors~home"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "jcw",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 2926774,
+      "names": [
+        "jcw"
+      ],
+      "files": [
+        "jcw.module.js",
+        "jcw.6e51a62df857ceff1a02.hot-update.js"
+      ],
+      "hash": "1a657e57b82ccd7aef55",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "archive",
+        "archive~portfolio~post",
+        "archive~post",
+        "home",
+        "page",
+        "portfolio",
+        "post",
+        "vendors~home"
+      ],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "page",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "size": 142036,
+      "names": [
+        "page"
+      ],
+      "files": [
+        "page.module.js"
+      ],
+      "hash": "79985a69a2335e6fb800",
+      "siblings": [],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "portfolio",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "size": 178448,
+      "names": [
+        "portfolio"
+      ],
+      "files": [
+        "portfolio.module.js"
+      ],
+      "hash": "47cedfd5ae637dd27a72",
+      "siblings": [
+        "archive~portfolio~post"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "post",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "size": 19187,
+      "names": [
+        "post"
+      ],
+      "files": [
+        "post.module.js"
+      ],
+      "hash": "d0818c7e035cb78ce725",
+      "siblings": [
+        "archive~portfolio~post",
+        "archive~post"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "vendors~home",
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "reason": "split chunk (cache group: vendors) (name: vendors~home)",
+      "size": 34151,
+      "names": [
+        "vendors~home"
+      ],
+      "files": [
+        "vendors~home.module.js"
+      ],
+      "hash": "866000ce507b137eb3df",
+      "siblings": [
+        "home"
+      ],
+      "parents": [
+        "jcw"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": [],
+  "generator": "loadable-components"
+}

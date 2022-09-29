@@ -91,6 +91,9 @@ const Loader = styled.div`
   z-index: 100;
   display: flex;
   justify-content: center;
+  div {
+    max-width: 150px;
+  }
   &::after {
     content: "LOADING";
     color: #999;

@@ -1,6 +1,7 @@
 import { styled, connect } from "frontity";
 import Link from "./link";
 import SectionContainer from "./styles/section-container";
+import Social from "./common/social"
 
 // Component that provides scroll to top functionality
 const BackToTop = () => {
@@ -15,7 +16,7 @@ const BackToTop = () => {
   return (
     <a href="#site-header" onClick={scrollToTop} style={{ cursor: "pointer" }}>
       <span style={{ marginRight: 8 }}>To the top</span>
-      <span className="arrow" aria-hidden="true">
+      <span className="bot-arrow" aria-hidden="true">
         ↑
       </span>
     </a>
@@ -35,6 +36,7 @@ const Footer = ({ state }) => {
             <Link link={state.frontity.url}>{state.frontity.title}</Link>
           </Copyright>
         </Credits>
+        <Social />
         <BackToTop />
       </SiteFooterInner>
     </SiteFooter>
@@ -44,7 +46,7 @@ const Footer = ({ state }) => {
 export default connect(Footer);
 
 const SiteFooterInner = styled(SectionContainer)`
-  align-items: baseline;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 `;
@@ -62,6 +64,11 @@ const SiteFooter = styled.footer`
   @media (min-width: 700px) {
     margin-top: 8rem;
     font-size: 1.2rem;
+  }
+  @media (max-width: 768px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.8rem;
   }
 
   a {
@@ -87,6 +94,9 @@ const Copyright = styled.p`
 
   @media (min-width: 700px) {
     font-weight: 300;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.8rem;
   }
 `;
 

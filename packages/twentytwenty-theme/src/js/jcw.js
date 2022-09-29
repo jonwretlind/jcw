@@ -78,6 +78,9 @@ const JCW = ({ state }) => {
             if ( $('main > div').attr('data-isblog') ) {
               $('#root').addClass('blog');
             }
+            if (! $('#root.archive').hasClass('portfolio') && ! $('#root.archive').hasClass('blog')) {
+              $('#root').addClass('single');
+            }
           });
         };
         addPageType();
