@@ -101,6 +101,172 @@ const JcwStyle = ({state}) => {
             margin: 0 auto;
           }
         }
+
+        /* BLOG ARTICLES */
+        #root.archive.blog {
+          #main > div {
+              display: flex;
+              flex-direction: row-reverse;
+              flex-wrap: wrap;
+          }
+          article {
+            margin: 0 auto;
+            box-shadow: unset;
+            border: none;
+          }
+          article:not(.active) {
+            display: block;
+            width: 30vw;
+            height: 30vh;
+            flex: 1 0 auto;
+
+            .arrow {
+              display: none;
+            }
+            div[class*="PostContainer"] {
+              margin-left: unset;
+
+              header[class*="PostHeader"] {
+                padding: 0px;
+                margin-top: -1px;
+              }
+              header div[class*="SectionContainer"]:first-of-type::before {
+                content: " ";
+                width: 33vw;
+                height: 30vh;
+                background-color: rgba(0,0,0,.6);
+                position: absolute;
+                margin-top: -20px;
+              }
+              a[class*="PostLink"] {
+                margin-bottom: -50%;
+                display: block;
+              }
+              div[class*="EntryCategories"] {
+                display: none;
+              }
+              div[class*="EntryContent"] {
+                max-width: unset;
+                margin-top: -5rem;
+              }
+              h2, h3, h4, h5, h6  {
+                display: none;
+              }
+              h1 {
+                margin: 2rem;
+                position: relative;
+                width: 25vw;
+                font-size: 3rem!important;
+                font-weight: 300;
+                bottom: 1rem;
+                color: #fff;
+                text-shadow: 0 0 3px #555;
+                &:hover {
+                  color: #C45400;
+                }
+              }
+              p, figcaption, ul, ol {
+                display: none;
+              }
+              figure {
+                position: relative;
+                z-index: -1;
+                display: none;
+                &:first-of-type {
+                  display: block;
+                  img {
+                    max-width: unset;
+                    visibility: visible !important;
+                    height: 33vw;
+                    min-width: 100%;
+                  }
+                }
+              }
+            }
+            figure#image {
+              display: none !important;
+            }
+          }
+          a[class*="PostLink"]:hover {
+            text-decoration: none;
+          }
+          article.active {
+            height: unset;
+            flex-direction: row-reverse;
+            order: -1;
+
+                figure#image {
+                  width: 100%;
+                  right: unset;
+                  height: unset;
+                  display: unset;
+                  padding: 6rem 0;
+                  background: unset;
+                  border: unset;
+                  max-width: 300px;
+                  margin-left: 80px;
+
+                  img {
+                    max-width: 100%;
+                    height: auto;
+                    max-height: 200px;
+                  }
+              }
+              h1[class*="PostTitle"] {
+                font-size: 5rem !important;
+                color: #C45400;
+                font-weight: 200;
+                &:hover {
+                  color: #222;
+                }
+              }
+              div[class*="EntryContent"] {
+                max-width: unset;
+              }
+              div[class*="EntryCategories"] {
+                display: none;
+              }
+              div[class*="PostMetaWrapper"] {
+                margin-bottom: 3rem;
+              }
+              div[class*="SectionContainer-PostInner"] {
+                display: flex;
+                flex-direction: column-reverse;
+              }
+              div[class*="PostContainer"] {
+                margin-left: 20px;
+                margin-right: 80px;
+                border-left: 1px solid #999;
+              }
+              h4, .heading-size-4 {
+                  font-size: 1.5rem;
+              }
+              p:last-of-type span {
+                display: none;
+              }
+              figure {
+                margin-bottom: 1rem;
+                height: unset;
+                padding: 0;
+              }
+              figcaption, .wp-caption-text {
+                  color: #777;
+                  display: block;
+                  font-size: 1.3rem;
+                  font-weight: 500;
+                  line-height: .9rem;
+                  margin-top: 0.5rem;
+                  margin-bottom: 3.5rem;
+                  font-style: italic;
+                  text-align: center;
+              }
+            }
+            .arrow {
+              height: 90vh;
+              position: fixed;
+            }
+        }
+
         body.services .img-container figure#image {
           @media (max-width: 768px) {
             right: -200px;

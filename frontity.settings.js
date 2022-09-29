@@ -34,7 +34,7 @@ const settings = {
               "/blog/"
             ],
             [
-              "Connect With Me",
+              "Let's Connect",
               "/contact/"
             ]
           ],
@@ -55,7 +55,19 @@ const settings = {
         "source": {
           "url": "https://jonwretlind.com/",
           "homepage": "home",
-          "postsPage": "portfolio"
+          "postsPage": "blog",
+          "postTypes": [
+            {
+              type: "portfolio",
+              endpoint: "portfolio",
+              archive: "/portfolio/"
+            },
+            {
+              type: "blog",
+              endpoint: "blog",
+              archive: "/blog/"
+            }
+          ]
         }
       }
     },

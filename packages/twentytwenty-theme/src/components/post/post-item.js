@@ -87,7 +87,7 @@ const PostItem = ({
        * list of featured posts, we render the media.
        */}
       {state.theme.featuredMedia.showOnArchive && showMedia && (
-        <PostFeaturedMedia id={item.featured_media} />
+        <FeaturedMedia id={item.featured_media} />
       )}
       <RightArrow className="arrow right">
         <ChevronRight className="icon"/>

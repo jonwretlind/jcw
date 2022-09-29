@@ -52,7 +52,6 @@ const Theme = ({ state }) => {
       <div style={{ minHeight: "calc(100vh - 190px)" }}>
         {/* Add the header of the site. */}
         <Header />
-
         {/* Add the main section. It renders a different component depending
         on the type of URL we are in. */}
         <Main id="main">
@@ -60,8 +59,8 @@ const Theme = ({ state }) => {
             <Loading when={data.isFetching} />
             <SearchResults when={data.isSearch} />
             <HomePage when={data.isHome} />
-            <Portfolio when={data.isArchive} />
-            <Archive when={data.isPostArchive} />
+            <Portfolio when={data.isPortfolioArchive} />
+            <Archive when={data.isArchive} />
             <Page when={data.isPage} />
             <Post when={data.isPostType} />
             <PageError when={data.isError} />
