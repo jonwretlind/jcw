@@ -58,7 +58,7 @@ const PortfolioItem = ({
       <PostHeader>
         <SectionContainer>
           {/* If the post has categories, render the categories */}
-          <PostCategories categories={categories} />
+          <PostCategories categories={categories} className="post-categories" />
 
           {/* The clickable heading for the post */}
           <PostLink link={item.link}>
@@ -183,6 +183,10 @@ export const SectionContainer = styled.div`
         }
       }
     }
+  }
+
+  a {
+    margin-right: 10px;
   }
 `;
 

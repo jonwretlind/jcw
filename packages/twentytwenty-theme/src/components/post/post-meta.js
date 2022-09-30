@@ -35,7 +35,7 @@ const PostMeta = ({ state, item }) => {
   // const numberOfComments = item.comments.length;
 
   return (
-    <PostMetaWrapper>
+    <PostMetaWrapper className="meta-wrapper">
       <PostMetaList>
         {/* If the post has an author, we render a clickable author text. */}
         {author && (

@@ -11,7 +11,7 @@ const PostCategories = ({ categories }) => {
   }
 
   return (
-    <EntryCategories>
+    <EntryCategories className="entry-categories">
       <ScreenReaderText>Categories</ScreenReaderText>
 
       <EntryCategoriesInner>

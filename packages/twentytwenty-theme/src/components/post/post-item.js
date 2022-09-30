@@ -1,7 +1,6 @@
 import { connect, styled } from "frontity";
 import Link from "../link";
 import FeaturedMedia from "./post-featured-media";
-import PostMeta from "./post-meta";
 import PostCategories from "./post-categories";
 import PostTags from "./post-tags";
 import ChevronLeft from "../icons/chevron-left";
@@ -54,29 +53,30 @@ const PostItem = ({
       <LeftArrow className="arrow left">
         <ChevronLeft className="icon"/>
       </LeftArrow>
-      <PostContainer>
-      <PostHeader>
-        <SectionContainer>
+      <PostContainer className="post-container">
+      <PostHeader className="post-header">
+        <SectionContainer className="section-container">
           {/* If the post has categories, render the categories */}
-          <PostCategories categories={categories} />
+          <PostCategories categories={categories} className="entry-categories" />
 
           {/* The clickable heading for the post */}
-          <PostLink link={item.link}>
+          <PostLink link={item.link} className="post-link">
             <PostTitle
-              className="heading-size-1"
+              className="heading-size-1 post-title"
               dangerouslySetInnerHTML={{ __html: item.title.rendered }}
             />
           </PostLink>
           {/* If the post has an excerpt (short summary text), we render it */}
           {content && (
-            <PostInner size="thin">
+            <PostInner size="thin" className="post-inner">
               {/* TODO: Change this to HTML2React */}
               {/* dangerouslySetInnerHTML={{ __html: content.rendered }} */}
-              <EntryContent>
+              <Overlay className="overlay"/>
+              <EntryContent className="entry-content">
                 <Html2React html={content.rendered} />
               </EntryContent>
               {/* If the post has tags, render it */}
-              {item.tags && <PostTags tags={tags} />}
+              {item.tags && <PostTags tags={tags} className="post-tags"/>}
             </PostInner>
           )}
         </SectionContainer>
@@ -156,6 +156,11 @@ export const PostHeader = styled.header`
   text-align: left;
   padding: 2em;
   width: 100%;
+`;
+
+export const Overlay = styled.div`
+  width: 100%;
+  height: 100%;
 `;
 
 // Header sizes bases on style.css

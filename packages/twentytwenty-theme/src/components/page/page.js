@@ -10,7 +10,7 @@ import {
   PageTitle,
   SectionContainer,
 } from "./page-item"
-import AnimatedCircles from "../common/animated-circles";
+import AnimatedConnections from "../common/animated-connections";
 import AnimatedConstellation from "../common/animated-constellation";
 import AnimatedSquares from "../common/animated-squares";
 
@@ -67,7 +67,7 @@ let pg = state.router.link.match(/[^\/]+/g);
             <Switch>
               <AnimatedConstellation when={pg == "services"} />
               <AnimatedSquares when={pg == "about"} />
-              <AnimatedCircles when={pg == "contact"} />
+              <AnimatedConnections when={pg == "contact"} />
             </Switch>
             <FeaturedMedia id={page.featured_media} isSinglePage={true} />
           </>

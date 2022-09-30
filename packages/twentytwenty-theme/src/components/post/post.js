@@ -56,13 +56,13 @@ const Post = ({ state, actions, libraries }) => {
 
   // Load the post, but only if the data is ready.
   return data.isReady ? (
-    <PostArticle>
+    <PostArticle className="post-article">
       <Header>
-        <SectionContainer>
+        <SectionContainer className="section-container">
 
           <PostTitle
             as="h1"
-            className="heading-size-1"
+            className="heading-size-1 post-title"
             dangerouslySetInnerHTML={{ __html: post.title.rendered }}
           />
 
@@ -86,7 +86,7 @@ const Post = ({ state, actions, libraries }) => {
             <Html2React html={post.content.rendered} />
           </EntryContent>
           {/* If the post has tags, render it */}
-          {post.tags && <PostTags tags={tags} />}
+          {post.tags && <PostTags tags={tags} className="post-tags"/>}
         </PostInner>
       )}
     </PostArticle>

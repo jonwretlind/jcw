@@ -82,8 +82,11 @@ const SiteFooter = styled.footer`
 `;
 
 const Credits = styled.div`
-  @media (min-width: 700px) {
+  @media (min-width: 768px) {
     display: flex;
+  }
+  @media (max-width: 768px) {
+    max-width: 25%;
   }
 `;
 

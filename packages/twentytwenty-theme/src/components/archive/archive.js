@@ -35,6 +35,7 @@ const Archive = ({ state, showExcerpt, showMedia }) => {
               showExcerpt={_showExcerpt}
               showMedia={showMedia}
               index={index}
+              className="article-section"
             />
           </Fragment>
         );

@@ -58,6 +58,17 @@ const SocialIcons = styled.div`
   display: flex;
   margin-bottom: -10px;
 
+  .sfsi_wicons {
+    margin: 0 5px;
+  }
+  @media (max-width: 768px) {
+    margin-left: -8%;
+    .sfsi_wicons {
+      margin: 0 2px;
+      transform: scale(.95);
+    }
+  }
+
   span {
     width: 25px;
     height: auto;

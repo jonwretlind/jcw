@@ -291,6 +291,19 @@ const JcwStyle = ({state}) => {
               display: block;
           }
 
+          input.btn-submit {
+            padding: .7rem 3rem;
+            background-color: #C55400;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 0;
+            font-weight: 500;
+            &:hover {
+              background-color: #222;
+            }
+          }
+
         }
 
         /* BLOG ARTICLES */
@@ -307,56 +320,69 @@ const JcwStyle = ({state}) => {
           }
           article:not(.active) {
             display: block;
-            width: 33.33vw;
-            height: 30vh;
-            flex: 1 0 auto;
-            max-width: 33.33vw;
+            width: 24.5vw;
+            height: 20vw;
             z-index: 10;
+            flex: 1 0 auto;
+            border: 1px solid white;
+            @media (max-width: 768px) {
+              width: 49.5vw;
+            }
 
             .arrow {
               display: none;
             }
-            div[class*="PostContainer"] {
+            div.post-container {
               margin-left: unset;
 
-              header[class*="PostHeader"] {
+              header.post-header {
                 padding: 0px;
                 margin-top: -1px;
+                overflow: hidden;
+                @media (max-width: 768px) {
+                  width: 49.5vw;
+                }
               }
-              header div[class*="SectionContainer"]:first-of-type::before {
-                content: " ";
-                width: 33.33vw;
-                height: 30vh;
-                background-color: rgba(0,0,0,.6);
-                position: absolute;
-                margin-top: -2rem;
-                max-width: 33.33vw;
+              .overlay {
+                width: inherit;
+                height: 20vw;
+                background-color: rgba(196, 84, 0, 0.9);
+                position: relative;
+                margin-bottom: -100%;
+                @media (max-width: 768px) {
+                  width: 49.5vw;
+                }
               }
-              a[class*="PostLink"] {
-                margin-bottom: -50%;
+              a.post-link {
                 display: block;
+                z-index: 10;
+                position: absolute;
               }
-              div[class*="EntryCategories"] {
+              div.entry-categories {
                 display: none;
               }
-              div[class*="EntryContent"] {
+              div.entry-content {
                 max-width: unset;
                 margin-top: -5rem;
               }
               h2, h3, h4, h5, h6  {
                 display: none;
               }
-              h1 {
+              h1.post-title {
                 margin: 2rem;
                 position: relative;
-                width: 25vw;
-                font-size: 3rem!important;
+                width: 23vw;
+                font-size: 2.8rem!important;
                 font-weight: 300;
                 bottom: 1rem;
                 color: #fff;
-                text-shadow: 0 0 3px #555;
                 &:hover {
-                  color: #C45400;
+                  color: #222;
+                }
+                @media (max-width: 768px) {
+                  font-size: 2.2rem!important;
+                  font-weight: 700;
+                  width: 45vw;
                 }
               }
               p, figcaption, ul, ol {
@@ -387,7 +413,7 @@ const JcwStyle = ({state}) => {
               display: none !important;
             }
           }
-          a[class*="PostLink"]:hover {
+          a.post-link:hover {
             text-decoration: none;
           }
           article.active {
@@ -395,29 +421,19 @@ const JcwStyle = ({state}) => {
             flex-direction: row-reverse;
             order: -1;
             justify-content: center;
+            padding: 0 10vw;
+            @media (max-width: 14px) {
+              padding: 0 3rem;
+            }
+            @media (max-width: 768px) {
+              padding: 0 3rem;
+            }
 
                 figure#image {
-                  width: 100%;
-                  right: unset;
-                  height: unset;
-                  display: unset;
-                  padding: 6rem 0;
-                  background: unset;
-                  border: unset;
-                  max-width: 300px;
-                  margin-left: 80px;
+                  display: none !important;
 
-                  @media (max-width: 768px) {
-                    display: none !important;
-                  }
-
-                  img {
-                    max-width: 100%;
-                    height: auto;
-                    max-height: 200px;
-                  }
               }
-              h1[class*="PostTitle"] {
+              h1.post-title{
                 font-size: 5rem !important;
                 color: #C45400;
                 font-weight: 200;
@@ -425,29 +441,30 @@ const JcwStyle = ({state}) => {
                   color: #222;
                 }
               }
-              div[class*="EntryContent"] {
+              div.entry-content{
                 max-width: unset;
               }
-              div[class*="EntryCategories"] {
+              div.entry-categories {
                 display: none;
               }
-              div[class*="PostMetaWrapper"] {
-                margin-bottom: 3rem;
+              div.post-inner ul {
+                margin-bottom: 2rem;
               }
-              div[class*="SectionContainer"] {
+              div.section-container {
                 max-width: 980px;
               }
-              div[class*="SectionContainer-PostInner"] {
+              div.post-inner {
                 display: flex;
                 flex-direction: column-reverse;
               }
-              div[class*="PostContainer"] {
+              div.post-container {
                 margin-left: 20px;
                 margin-right: 80px;
-                border-left: 1px solid #999;
                 @media (max-width: 768px) {
-                  border-left: unset;
                   padding: 0 3rem;
+                }
+                @media (max-width: 425px) {
+                  margin: 0 20px;
                 }
               }
               h4, .heading-size-4 {
@@ -457,6 +474,7 @@ const JcwStyle = ({state}) => {
                 display: none;
               }
               p, figcaption, ul, ol {
+                font-size: 1.5rem;
                 @media (max-width: 768px) {
                   font-size: 2rem;
                 }
@@ -500,6 +518,12 @@ const JcwStyle = ({state}) => {
             order: -1;
             justify-content: center;
             padding-bottom: 8rem;
+            box-shadow: unset;
+            border: unset;
+            max-width: 980px;
+            @media (max-width: 768px) {
+              padding: 0 3rem;
+            }
 
                 figure#image {
                 display: none !important;
@@ -513,7 +537,7 @@ const JcwStyle = ({state}) => {
               header {
                 padding: 4rem 0 1rem 0;
               }
-              h1[class*="PostTitle"] {
+              h1.post-title {
                 font-size: 6rem !important;
                 color: #C45400;
                 font-weight: 200;
@@ -521,7 +545,10 @@ const JcwStyle = ({state}) => {
                   color: #222;
                 }
               }
-              p, figcaption, ul, ol {
+
+              p, figcaption, ul, ol
+              {
+                font-size: 1.5rem;
                 @media (max-width: 768px) {
                   font-size: 2rem;
                 }
@@ -529,26 +556,18 @@ const JcwStyle = ({state}) => {
                   font-size: 2.5rem;
                 }
               }
-              div[class*="EntryContent"] {
-                max-width: unset;
+              div.entry-content, .css-11rmm0t {
+                max-width: unset !important;
               }
-              div[class*="EntryCategories"] {
-                display: none;
-              }
-              div[class*="PostMetaWrapper"] {
+              div.post-meta {
                 margin-bottom: 3rem;
               }
-              div[class*="SectionContainer"] {
-                max-width: 980px;
-                @media (max-width: 768px) {
-                  padding: 0 3rem;
-                }
-              }
-              div[class*="SectionContainer-PostInner"] {
+
+              & > div {
                 display: flex;
                 flex-direction: column-reverse;
               }
-              div[class*="PostContainer"] {
+              div.post-container {
                 margin-left: 20px;
                 margin-right: 80px;
                 border-left: 1px solid #999;
@@ -582,7 +601,7 @@ const JcwStyle = ({state}) => {
               position: fixed;
             }
         }
-        }
+
 
 
 
@@ -625,7 +644,7 @@ const JcwStyle = ({state}) => {
             justify-items: flex-start;
           }
 
-          button {
+          input[type="submit"], button {
             padding: .7rem 3rem;
             background-color: #C55400;
             color: white;

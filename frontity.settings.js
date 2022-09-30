@@ -8,6 +8,7 @@ const settings = {
     }
   },
   "packages": [
+    "@aamodtgroup/frontity-contact-form-7",
     {
       "name": "@frontity/twentytwenty-theme",
       "state": {
